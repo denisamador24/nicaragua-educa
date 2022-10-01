@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Clases</title>
-  
+
   <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -20,16 +20,20 @@
         <h1>TV Clasew</h1>
       </div>
       <div class="header-class-category">
-        <div></div>
-        <div></div>
+        <div><span>TV clase</span></div>
+        <div><span>Material</span></div>
       </div>
       <div class="header-other">
-        <img src="" alt="Logo Facebook">
+        <img src="./assets/icon/facebook.png" alt="Logo Facebook">
       </div>
     </div>
-    <div class="heade-down hide">
+    <div class="header-down hide">
       <nav class="header-navigation">
-        <div></div>
+        <div><span>Matemáticas</span></div>
+        <div><span>L y L</span></div>
+        <div><span>CCNN</span></div>
+        <div><span>SSCC</span></div>
+        <div><span>Inglés</span></div>
       </nav>
     </div>
   </header>
@@ -69,28 +73,108 @@
       </div>
     </section>
 
+    <section class="login hide">
+      <form class="login-form">
+        <label for="username" class="label">Usuario</label>
+        <input type="text" id="username" placeholder="docente@mined" class="input input-user" value="classtv@gaspar.com">
 
+        <label for="password" class="label">Contraseña</label>
+        <input type="password" id="password" placeholder="*********" class="input input-password">
+
+        <button type="reset" class="primary-button login-button">Siguiente</button>
+      </form>
+    </section>
 
     <section class="registertv hide">
       <div class="register-form">
-        <form action="">
-          <input class="inp-contenido" type="text">
-          <input class="inp-link" type="url">
-          <input class="inp-grade" type="text">
-          <input class="inp-subject" type="text">
+        <form action="https://tvclass.000webhostapp.com/registerclasstv.php" method="POST">
+          <div>
+            <label for="registertv-inptheme">Contenido: </label>
+            <input id="registertv-inptheme" class="input inp-contenido" name="title" type="text">
+          </div>
+          <div>
+            <label for="registertv-inplink">Enlace: </label>
+            <input id="registertv-inplink" name="link" class="input inp-link" type="url">
+          </div>
+          <div>
+            <label for="registertv-grade">Grado: </label>
+            <select id="registertv-grade" class="input" name="grade">
+              <option value="1">Primero 1</option>
+              <option value="2" selected>Segundo 2</option>
+              <option value="3">Tercero 3</option>
+              <option value="4">Cuarto 4</option>
+              <option value="5">Quinto 5</option>
+              <option value="6">Sexto 6</option>
+              <option value="7">Sectimo 7</option>
+              <option value="8">Octavo 8</option>
+              <option value="9">Noveno 9</option>
+              <option value="10">Décimo 10</option>
+              <option value="11">Undécimo 11</option>
+            </select>
+
+          </div>
+          <div>
+            <label for="registertv-subject">Materia: </label>
+            <select id="registertv-subject" class="input" name="subject">
+              <option value="matematicas">Matemáticas</option>
+              <option value="lyl" selected>Lengua y Literatura</option>
+              <option value="ingles">Inglés</option>
+              <option value="ccss">Ciencias Naturales</option>
+              <option value="sscc">Estudios Sociales</option>
+            </select>
+
+          </div>
+          <button type="submit" class="primary-button" id="registerclass-btnform">Guardar</button>
         </form>
       </div>
     </section>
 
     <section class="registerclass hide">
       <div>
-        <form action="">
-          <input class="inp-contenido" type="text">
-          <input class="inp-file" type="file">
-          <input class="inp-grade" type="text">
-          <input class="inp-subject" type="text">
-          <textarea class="inp-description" name=""></textarea>
+        <form id="registerclass-form" method="POST" action="https://tvclass.000webhostapp.com/registerclass.php" enctype="multipart/form-data">
+          <div>
+            <label for="registerclass-theme">Tema: </label>
+            <input id="registerclass-theme" class="input inp-theme" type="text" name="title">
+          </div>
+          <div>
+            <label for="registerclass-file">Imágenes y archivos: </label>
+            <input id="registertv-file" class="inp-file" type="file" name="files" multiple>
+          </div>
+          <div>
+            <label for="registerclass-grade">Grado: </label>
+            <select id="registerclass-grade" class="input" name="grade">
+              <option value="1">Primero 1</option>
+              <option value="2" selected>Segundo 2</option>
+              <option value="3">Tercero 3</option>
+              <option value="4">Cuarto 4</option>
+              <option value="5">Quinto 5</option>
+              <option value="6">Sexto 6</option>
+              <option value="7">Sectimo 7</option>
+              <option value="8">Octavo 8</option>
+              <option value="9">Noveno 9</option>
+              <option value="10">Décimo 10</option>
+              <option value="11">Undécimo 11</option>
+            </select>
+
+          </div>
+          <div>
+            <label for="registerclass-subject">Materia: </label>
+            <select id="registerclass-subject" class="input" name="subject">
+              <option value="matematicas">Matemáticas</option>
+              <option value="lyl" selected>Lengua y Literatura</option>
+              <option value="ingles">Inglés</option>
+              <option value="ccss">Ciencias Naturales</option>
+              <option value="sscc">Estudios Sociales</option>
+            </select>
+
+          </div>
+          <div>
+            <label for="registerclass-description">Descripción: </label>
+            <textarea id="registerclass-description" class="input" class="inp-description" name="description"></textarea>
+          </div>
+          <button type="submit" class="primary-button" id="registerclass-btnform">Guardar</button>
         </form>
+
       </div>
     </section>
   </main>
@@ -100,6 +184,8 @@
   <script src="home.js"></script>
   <script src="grades.js"></script>
   <script src="subjects.js"></script>
+  <script src="register.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
