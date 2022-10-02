@@ -1,38 +1,41 @@
+const URL = 'https://tvclass.000webhostapp.com/';
+
+/*
 // variables de prueba
 const classes = [
     {
       title: 'Contenido',
       grade: '11',
-      subject: 'Matematicas',
+      subject: 'Matemáticas',
       path_files: [
-          'files/facebook.png',
-          'files/facebook.png'
+          'files/facebook (1).png',
+          'files/facebook (1).png'
         ],
       description: 'variables de prueba'
     },
      {
       title: 'Contenido',
       grade: '8',
-      subject: 'Matematicas',
+      subject: 'Matemáticas',
       path_files: [
-          'files/facebook.png',
-          'files/facebook.png'
+          'files/facebook (1).png',
+          'files/facebook (1).png'
         ],
       description: 'variables de prueba'
     },
      {
       title: 'Contenido',
       grade: '6',
-      subject: 'Matematicas',
+      subject: 'Matemáticas',
       path_files: [
-          'files/facebook.png',
-          'files/facebook.png'
+          'files/facebook (1).png',
+          'files/facebook (1).png'
         ],
       description: 'variables de prueba'
     }
   ];
   
-const objLink = '<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fnicaraguaeduca%2Fvideos%2F948894502692462%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>'
+const objLink = '<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fnicaraguaeduca%2Fvideos%2F948894502692462%2F&show_text=false&width=560&t=0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>'
 
 const classesTv = [
   
@@ -62,7 +65,7 @@ const classesTv = [
     },
   ]
 
-
+*/
 
 loginSection_loginButton.addEventListener('click', () => {
   const username = loginSection_inpUsername.value;
@@ -79,7 +82,3 @@ loginSection_loginButton.addEventListener('click', () => {
  
 });
 
-
-/*
-<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fnicaraguaeduca%2Fvideos%2F948894502692462%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-*/

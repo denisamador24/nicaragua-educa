@@ -1,4 +1,4 @@
-const URL = 'https://tvclass.000webhostapp.com/';
+
 headerClassCategory_class.addEventListener('click', () => {
   tvOrClass = 1;
 }); 
@@ -7,31 +7,37 @@ headerClassCategory_tvclass.addEventListener('click', () => {
 });
 
 headerNav_en.addEventListener('click', () => {
-  createSubjectLlist('Ingles');
+  localSubject = 'Inglés';
+  createSubjectLlist();
 });
 headerNav_lyl.addEventListener('click', () => {
-  createSubjectLlist('Lengua y Literatura');
+  localSubject = 'Lengua y Literatura';
+  createSubjectLlist();
 });
 headerNav_mat.addEventListener('click', () => {
-  createSubjectLlist('Matematicas');
+  localSubject = 'Matemáticas';
+  createSubjectLlist();
 });
 headerNav_ccnn.addEventListener('click', () => {
-  createSubjectLlist('Ciencias Naturales');
+  localSubject = 'Ciencias Naturales';
+  createSubjectLlist();
 });
 headerNav_ccss.addEventListener('click', () => {
-  createSubjectLlist('Estudios Sociales');
+  localSubject = 'Estudios Sociales';
+  createSubjectLlist();
 });
 
 let tvOrClass = 1;
+let localSubject = 'Matemáticas';
 
-function createSubjectLlist(subject = 'Matematicas') {
+function createSubjectLlist() {
   let classGradeList;
   
   if (tvOrClass === 1){
     classGradeList = classes.filter((it) => {
       console.log(it);
-      console.log(userGrade, subject);
-      if (it.grade == userGrade && it.subject == subject) {
+      console.log(userGrade, localSubject);
+      if (it.grade == userGrade && it.subject == localSubject) {
         return it;
       }
     });
@@ -39,7 +45,7 @@ function createSubjectLlist(subject = 'Matematicas') {
   } else {
     classGradeList = classesTv.filter((it) => {
       console.log(it);
-      if (it.grade == userGrade && it.subject == subject) {
+      if (it.grade == userGrade && it.subject == localSubject) {
         return it;
       }
     });
@@ -58,10 +64,13 @@ function createSubjectLlist(subject = 'Matematicas') {
     item.addEventListener('click', () => {
       
       if (tvOrClass === 1){
-        
+        location.hash = '#watch';
+        renderViewClass(subject);
+        headerTitle_h1.innerText = subject.title;
       } else {
         location.hash = '#watchtv';
-        rederViewTvClass();
+        rederViewTvClass(subject);
+        headerTitle_h1.innerText = subject.title;
       }
     });
     subjectSection_list.appendChild(item);

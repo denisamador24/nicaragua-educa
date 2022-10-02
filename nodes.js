@@ -3,6 +3,7 @@ const headerUp = document.querySelector('.header-up');
 const headerDown = document.querySelector('.header-down')
 const headerLogo = document.querySelector('.header-logo');
 const headerTitle = document.querySelector('.header-title');
+const headerTitle_h1 = document.querySelector('.header-title h1')
 const headerClassCategory = document.querySelector('.header-class-category');
 const headerClassCategory_class = document.querySelector('.header-class-category--class');
 const headerClassCategory_tvclass = document.querySelector('.header-class-category--tvclass');
@@ -29,7 +30,14 @@ const subjectSection = document.querySelector('.subjects');
 const subjectSection_list = document.querySelector('.subjects-list');
 
 // watch tvClass
-const watchtvSectiom = document.querySelector('.watchtv');
+const watchtvSection = document.querySelector('.watchtv');
+const watchtvSection_frame = document.querySelector('.watchtv-frame');
+
+// watch class
+const watchSection = document.querySelector('.watch');
+const watchSection_files = document.querySelector('.watch-files');
+const watchSection_description = document.querySelector('.watch-description p');
+
 
 // login
 const loginSection = document.querySelector('.login');

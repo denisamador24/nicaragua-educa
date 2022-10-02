@@ -13,8 +13,14 @@ function navigation (){
   } else if (hash === '#subjects'){
     subjectSection.classList.remove('hide');
     headerForSubjects();
-  } else if (hash = '#watchtv'){
-    watchtvSectiom.classList.remove('hide');
+    
+  } else if (hash === '#watch'){
+    watchSection.classList.remove('hide');
+    headerForTitle();
+    
+  } else if (hash === '#watchtv'){
+    watchtvSection.classList.remove('hide');
+    headerForTitle();
     
   } else if (hash === '#login'){
     loginSection.classList.remove('hide');
@@ -36,7 +42,7 @@ function hideAllSections (){
   homeSection.classList.add('hide');
   gradeSection.classList.add('hide');
   subjectSection.classList.add('hide');
-  watchtvSectiom.classList.add('hide');
+  watchtvSection.classList.add('hide');
   loginSection.classList.add('hide');
   registerTvSection.classList.add('hide');
   registerClassSection.classList.add('hide');
@@ -51,7 +57,8 @@ function headerForSubjects (){
 function headerForHome (){
   headerTitle.classList.add('hide');
   headerClassCategory.classList.add('hide');
-  headerDown.classList.add('hide')
+  headerDown.classList.add('hide');
+  headerClassCategory.classList.add('hide');
   headerOtherLink.classList.remove('hide');
 }
 
