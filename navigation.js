@@ -13,6 +13,8 @@ function navigation (){
   } else if (hash === '#subjects'){
     subjectSection.classList.remove('hide');
     headerForSubjects();
+  } else if (hash = '#watchtv'){
+    watchtvSectiom.classList.remove('hide');
     
   } else if (hash === '#login'){
     loginSection.classList.remove('hide');
@@ -33,6 +35,8 @@ function navigation (){
 function hideAllSections (){
   homeSection.classList.add('hide');
   gradeSection.classList.add('hide');
+  subjectSection.classList.add('hide');
+  watchtvSectiom.classList.add('hide');
   loginSection.classList.add('hide');
   registerTvSection.classList.add('hide');
   registerClassSection.classList.add('hide');

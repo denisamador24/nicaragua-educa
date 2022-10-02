@@ -4,7 +4,14 @@ const headerDown = document.querySelector('.header-down')
 const headerLogo = document.querySelector('.header-logo');
 const headerTitle = document.querySelector('.header-title');
 const headerClassCategory = document.querySelector('.header-class-category');
+const headerClassCategory_class = document.querySelector('.header-class-category--class');
+const headerClassCategory_tvclass = document.querySelector('.header-class-category--tvclass');
 const headerOtherLink = document.querySelector('.header-other');
+const headerNav_mat = document.querySelector('.header-navigation .mat');
+const headerNav_lyl = document.querySelector('.header-navigation .lyl');
+const headerNav_ccnn = document.querySelector('.header-navigation .ccnn');
+const headerNav_ccss = document.querySelector('.header-navigation .sscc');
+const headerNav_en = document.querySelector('.header-navigation .en');
 
 // Home 
 const homeSection = document.querySelector('.home');
@@ -20,6 +27,9 @@ const gradeSection_list = document.querySelector('.grade-list');
 // Subjects
 const subjectSection = document.querySelector('.subjects');
 const subjectSection_list = document.querySelector('.subjects-list');
+
+// watch tvClass
+const watchtvSectiom = document.querySelector('.watchtv');
 
 // login
 const loginSection = document.querySelector('.login');
